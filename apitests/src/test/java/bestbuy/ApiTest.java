@@ -24,7 +24,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
 
 
-public class ApiTests extends BaseTest {
+public class ApiTest extends BaseTest {
 
     private static final String BASEURL = "http://localhost";
     private static final int PORT = 3030;
