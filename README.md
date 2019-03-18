@@ -37,7 +37,7 @@ After every execution a folder named with timestamp is created in the Reports fo
 
 ### Tests Descriptions
 
-######versionTest()
+###### versionTest()
 
 This test checks request and response to /version endpoint. 
 
@@ -45,7 +45,7 @@ Checkings:
 * Response code 200
 * Version number 
 
-######healthCheckTest()
+###### healthCheckTest()
 
 This test checks request and response to /healthcheck endpoint.
  
@@ -54,7 +54,7 @@ Checkings:
 * Presense of required fields in responses jsons. 
 
 
-######getAllProductsTest()
+###### getAllProductsTest()
 
 This test checks request and response to /healthcheck endpoint. 
 
@@ -63,7 +63,7 @@ Checkings:
 * Presense of required fields in responses jsons. 
 
 
-######getAllCategoriesTest()
+######  getAllCategoriesTest()
 
 This test checks request and response to /categories endpoint. 
 
@@ -73,7 +73,7 @@ Checkings:
 
 
 
-######getAllServicesTest()
+###### getAllServicesTest()
 
 This test checks request and response to /services endpoint. 
 
@@ -82,7 +82,7 @@ Checkings:
 * Presense of required fields in responses jsons. 
 
 
-######getAllStoresTest()
+###### getAllStoresTest()
 
 This test checks request and response to /stores endpoint. 
 
@@ -90,7 +90,7 @@ Checkings:
 * Response code 200
 * Presense of required fields in responses json. 
 
-######addGetUpdateDeleteProductTest()
+###### addGetUpdateDeleteProductTest()
 
 This test checks POST request for adding a new product, GET request for single product, PATCH request for update product and DELETE request for product.
 GET, PATCH and DELETE requests are used with the recently created product by POST request.  
@@ -108,7 +108,7 @@ Checkings:
 * Response code 404 for GET request for deleted product. 
 * Field "message" in json equals to "NotFound" in response to GET request for deleted product.
    
-######limitProductsTest()
+###### limitProductsTest()
 
 This test checks request and response to /products endpoint when number of results is limited by 1 only. 
 
@@ -117,7 +117,7 @@ Checkings:
 * Presense of required fields in responses json.
 * Only one product is returned. 
 
-######getProductsFromMostExpensiveDescTest()
+###### getProductsFromMostExpensiveDescTest()
 
 This test checks request and response to /products endpoint when results are sorted by price descended. 
 
@@ -126,7 +126,7 @@ Checkings:
 * Presense of required fields in responses json.
 * Products in response are sorted by price from the highest.
 
-###Summary 
+### Summary 
 Due to the lack of time not all possible tests have been implemented. To maximize coverage all endpoints are involved in testing with GET all items requests.
 POST, PATCH, GET one item and DELETE requests are tested for Products. Also some tricks for GET requests are tested for Products. 
 Other entities can be tested similarly.
