@@ -1,5 +1,6 @@
 # High Level Test Plan 
-##Defining of general moments for testing of Monefy mobile application for Android.
+## Defining of general moments for testing of Monefy mobile application for Android.
+
 
 
 ### _Critical Priority tasks:_
